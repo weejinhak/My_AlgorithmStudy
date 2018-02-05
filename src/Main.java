@@ -18,5 +18,9 @@ public class Main {
 //        Class_2577 class_2577 = new Class_2577();
 //        class_2577.method2577();
 
+//        문제 8958(OX퀴즈)
+//        Class_8958 class_8958 = new Class_8958();
+//        class_8958.method8958();
+
     }
 }
