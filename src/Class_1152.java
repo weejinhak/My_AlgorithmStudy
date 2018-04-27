@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Class_1152 {
 
+
     private static Scanner scanner = new Scanner(System.in);
 
     void matod1152() {

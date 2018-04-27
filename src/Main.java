@@ -22,5 +22,14 @@ public class Main {
 //        Class_8958 class_8958 = new Class_8958();
 //        class_8958.method8958();
 
+//        문제 2920(음계)
+//        Class_2920 class_2920 = new Class_2920();
+//        class_2920.method2920();
+
+//        문제 10039(평균)
+//        Class_10039 class_10039 = new Class_10039();
+//        class_10039.method10039();
+
+
     }
 }
