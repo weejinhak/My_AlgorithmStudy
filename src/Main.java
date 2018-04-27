@@ -30,6 +30,9 @@ public class Main {
 //        Class_10039 class_10039 = new Class_10039();
 //        class_10039.method10039();
 
+        Programmers_Collatz c = new Programmers_Collatz();
+        int ex = 6;
+        System.out.println(c.collatz(ex));
 
     }
 }
