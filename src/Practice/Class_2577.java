@@ -1,3 +1,5 @@
+package Practice;
+
 import java.util.Scanner;
 
 class Class_2577 {

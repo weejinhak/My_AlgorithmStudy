@@ -1,3 +1,5 @@
+package Programmers;
+
 import java.io.IOException;
 
 public class Programmers_FindKim {

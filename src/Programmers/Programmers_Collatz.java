@@ -1,3 +1,5 @@
+package Programmers;
+
 public class Programmers_Collatz {
     static int count = 0;
 

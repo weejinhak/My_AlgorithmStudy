@@ -1,3 +1,5 @@
+package Programmers;
+
 public class Programmers_NumofPrime {
 
     int numberOfPrime(int n){

@@ -1,3 +1,5 @@
+package Practice;
+
 import java.util.*;
 import java.io.*;
 public class Class_1715{
