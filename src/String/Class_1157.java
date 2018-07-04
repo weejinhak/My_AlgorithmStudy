@@ -27,8 +27,8 @@ public class Class_1157 {
                 max = countAlphabet[i];
             }
         }
-        //개수가 많은 알파벳이 겹치는지 체크
 
+        //개수가 많은 알파벳이 겹치는지 체크
         int result = 0;
         char ch = 0;
         for (int i = 0; i < countAlphabet.length; i++) {
