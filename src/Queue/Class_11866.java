@@ -17,6 +17,7 @@ public class Class_11866 {
         for (int i = 1; i <= n; i++) {
             deque.add(i);
         }
+        
 
         while (!deque.isEmpty()) {
             for (int i = 1; i < m; i++) {

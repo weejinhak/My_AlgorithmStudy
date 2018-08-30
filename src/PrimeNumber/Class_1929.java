@@ -7,6 +7,17 @@ import java.util.StringTokenizer;
 
 public class Class_1929 {
 
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int minNum = Integer.parseInt(st.nextToken());
+        int maxNum = Integer.parseInt(st.nextToken());
+
+        primeNumber(minNum, maxNum);
+    }
+
     private static void primeNumber(int min, int max) {
 
         int[] primeNumArr = new int[max+1];
@@ -26,18 +37,6 @@ public class Class_1929 {
             if (primeNumArr[i] == 1) System.out.println(i);
         }
 
-    }
-
-
-    public static void main(String[] args) throws IOException {
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
-        int minNum = Integer.parseInt(st.nextToken());
-        int maxNum = Integer.parseInt(st.nextToken());
-
-        primeNumber(minNum, maxNum);
     }
 
 
