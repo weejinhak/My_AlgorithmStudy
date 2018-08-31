@@ -14,7 +14,6 @@ public class Programmers_Fibonacci {
             answer = a + b;
             a = b;
             b = answer;
-
             System.out.println(answer);
         }
 
