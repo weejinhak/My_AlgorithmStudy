@@ -19,7 +19,6 @@ public class Programs_HarshadNumber {
         if(num%sum==0){
             return true;
         }
-
         return false;
     }
 
