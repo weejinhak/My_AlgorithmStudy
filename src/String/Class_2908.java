@@ -34,8 +34,5 @@ public class Class_2908 {
         } else if (inversInt[0] < inversInt[1]) {
             System.out.println(inversInt[1]);
         }
-
-
     }
-
 }
