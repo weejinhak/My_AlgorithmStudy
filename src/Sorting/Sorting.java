@@ -40,13 +40,29 @@ public class Sorting {
         System.out.println("=====[삽입정렬]=====");
         int c[] = {68, 9, 32, 2, 14, 7, 31, 26};
         System.out.printf("\n정렬할 원소 :");
-        for(int v : c) {
+        for (int v : c) {
             System.out.printf("%3d ", v);
         }
         System.out.println();
         s.insertionSort(c);
 
-        for(int v : c) {
+        for (int v : c) {
+            System.out.printf("%3d ", v);
+        }
+        /////////////////////////////
+
+        //[퀵] 테스트
+        System.out.println();
+        System.out.println("=====[퀵정렬]=====");
+        int d[] = {68, 9, 32, 2, 14, 7, 31, 26};
+        System.out.printf("\n정렬할 원소 :");
+        for (int v : d) {
+            System.out.printf("%3d ", v);
+        }
+        System.out.println();
+        s.quickSort(d, 0, d.length - 1);
+
+        for (int v : d) {
             System.out.printf("%3d ", v);
         }
         /////////////////////////////
@@ -69,9 +85,10 @@ class Sort {
             swap(a, min, i);
         }
     }
+
     //버블 정렬
     void bubbleSort(int a[]) {
-        for (int i = a.length-1; i > 0; i--) {
+        for (int i = a.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (a[j] > a[j + 1]) {
                     swap(a, j, j + 1);
@@ -81,18 +98,46 @@ class Sort {
     }
 
     //삽입 정렬
-    void insertionSort(int a[]){
-        for(int i = 0 ; i < a.length;i++){
+    void insertionSort(int a[]) {
+        for (int i = 0; i < a.length; i++) {
             int temp = a[i];
             int j = i;
-            while((j>0)&&(a[j-1]>temp)){
-                a[j] = a[j-1];
+            while ((j > 0) && (a[j - 1] > temp)) {
+                a[j] = a[j - 1];
                 j--;
             }
-            a[j] =temp;
+            a[j] = temp;
         }
     }
 
+    //quick 정렬
+    void quickSort(int a[], int low, int high) {
+        if (low >= high) {
+            return;
+        }
+
+        int middle = low + (high - low) / 2;
+        int pivot = a[middle];
+
+        int i = low, j = high;
+        while (i <= j) {
+            while (a[i] < pivot) {
+                i++;
+            }
+            while (a[j] > pivot) {
+                j--;
+            }
+            if (i <= j) {
+                swap(a, i, j);
+                i++;
+                j--;
+            }
+        }
+        if (low < j)
+            quickSort(a, low, j);
+        if (high > i)
+            quickSort(a, i, high);
+    }
 
 
     void swap(int a[], int index1, int index2) {

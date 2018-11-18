@@ -1,4 +1,4 @@
-package Sorting;
+package Shin;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -33,8 +33,6 @@ public class Pallen {
                 return;
             }
         }
-
         System.out.println("거꾸로 뒤집어도 같음");
-
     }
 }

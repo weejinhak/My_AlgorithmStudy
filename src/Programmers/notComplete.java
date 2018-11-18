@@ -1,4 +1,4 @@
-package Shin;
+package Programmers;
 
 import java.util.HashMap;
 import java.util.Map;
