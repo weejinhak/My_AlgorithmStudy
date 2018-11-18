@@ -6,12 +6,13 @@ import java.io.InputStreamReader;
 
 public class Class_2749 {
     public static void main(String[] args) throws IOException {
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(br.readLine());
-
         long fibo = fibonacci(n);
-        System.out.println(fibo % 1000000);
+
+        System.out.println(fibo);
 
     }
 
