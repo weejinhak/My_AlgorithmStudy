@@ -1,15 +1,6 @@
-package Shin.Algorithm;
+package Shin.Practice;
 
 public class Sort {
-    public static void main(String[] args) {
-
-        SortMathod sortMathod = new SortMathod();
-
-    }
-}
-
-
-class SortMathod {
 
     void selectionSort(int a[]) {
         for (int i = 0; i < a.length - 1; i++) {
@@ -24,7 +15,7 @@ class SortMathod {
     }
 
     void bubbleSort(int a[]) {
-        for (int i = a.length - 1; i > 0; i++) {
+        for (int i = a.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (a[j] > a[j + 1]) {
                     swap(a, j, j + 1);
@@ -49,7 +40,6 @@ class SortMathod {
         if (low >= high) {
             return;
         }
-
         int middle = low + (high - low) / 2;
         int pivot = a[middle];
 
@@ -67,10 +57,9 @@ class SortMathod {
                 j--;
             }
         }
-        if (low < j)
-            quickSort(a, low, j);
-        if (high > i)
-            quickSort(a, i, high);
+        if (low < j) quickSort(a, low, j);
+        if (high > i) quickSort(a, i, high);
+
     }
 
     void swap(int a[], int index1, int index2) {
@@ -78,4 +67,5 @@ class SortMathod {
         a[index1] = a[index2];
         a[index2] = temp;
     }
+
 }

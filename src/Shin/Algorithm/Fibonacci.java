@@ -1,4 +1,4 @@
-package Shin;
+package Shin.Algorithm;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package Shin;
+package Shin.Algorithm;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,6 +10,7 @@ public class Pallen {
 
     public static void main(String[] args) throws IOException {
 
+/*
         //input
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String string = br.readLine();
@@ -31,6 +32,19 @@ public class Pallen {
         }else{
             System.out.println("앞 뒤로 다름");
         }
+
+        */
+
+        String string = "aaabbbaaa";
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = string.length() - 1; i >= 0; i--) {
+            sb.append(string.charAt(i));
+        }
+
+        if(string.equals(sb.toString())) System.out.println("같음");
+        else System.out.println("다름");
+
 
     }
 }
