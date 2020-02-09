@@ -38,7 +38,6 @@ class SortMathod {
             int temp = a[i];
             int j = i;
             while ((j > 0) && (a[j - 1]) > temp) {
-                System.out.println(j);
                 a[j] = a[j - 1];
                 j--;
             }

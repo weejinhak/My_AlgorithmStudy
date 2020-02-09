@@ -24,15 +24,13 @@ public class Pallen {
             reverseArrayList.add(String.valueOf(string.charAt(i)));
         }
 
-        //reverse string
         Collections.reverse(reverseArrayList);
 
-        for(int i = 0 ; i < arrayList.size();i++){
-            if(!arrayList.get(i).equals(reverseArrayList.get(i))){
-                System.out.println("거꾸로 뒤집으면 다름");
-                return;
-            }
+        if(arrayList.equals(reverseArrayList)){
+            System.out.println("앞으로 해도 뒤로 해도 같음");
+        }else{
+            System.out.println("앞 뒤로 다름");
         }
-        System.out.println("거꾸로 뒤집어도 같음");
+
     }
 }

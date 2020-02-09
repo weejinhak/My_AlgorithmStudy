@@ -22,7 +22,7 @@ class PrimeMethod {
         for (int i = 0; i < arrayList.size(); i++) {
             int prime = arrayList.get(i);
             isPrimecount = 0;
-            for (int j = 1; i <= prime; j++) {
+            for (int j = 1; j <= prime; j++) {
                 if (prime % j == 0) {
                     isPrimecount++;
                 }
